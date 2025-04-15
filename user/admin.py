@@ -1,6 +1,13 @@
 from django.contrib import admin
+
 from django.contrib.auth.admin import UserAdmin
+
 from .models import CustomUser
+
+
+admin.site.site_header = "jwt-authentication Admin Panel"
+admin.site.site_title = "jwt-authentication Admin Panel"
+admin.site.index_title = "Welcome to jwt-authentication Admin Panel!"
 
 
 @admin.register(CustomUser)
