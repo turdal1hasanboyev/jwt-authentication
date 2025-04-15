@@ -44,6 +44,6 @@ class CustomUserAdmin(UserAdmin):
             'fields': ('email', 'password1', 'password2',),
         }),
         ("Permissions", {
-            'fields': ('is_superuser', 'is_staff', 'is_active',),
+            'fields': ('is_superuser', 'is_staff',),
         }),
     )
